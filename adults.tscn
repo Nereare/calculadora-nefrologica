@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cm77gyepsuj2f"]
+
+[node name="Adults" type="Window"]
+title = "Calculadora"
+initial_position = 2
+size = Vector2i(420, 780)

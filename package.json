@@ -1,0 +1,16 @@
+{
+  "name": "calculadora-nefrologica",
+  "description": "Uma calculadora para contraste iodado em exames radiológicos",
+  "version": "0.1.0",
+  "maintainers": [
+    {
+      "name": "Igor Padoim",
+      "email": "igorpadoim@gmail.com",
+      "web": "https://nereare.com/"
+    }
+  ],
+  "bugs": {
+    "web": "https://github.com/Nereare/calculadora-nefrologica/issues"
+  },
+  "license": "WTFPL"
+}

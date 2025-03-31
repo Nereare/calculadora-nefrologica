@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Calculadora Nefrológica"
+config/description="Uma calculadora para decisão sobre indicação ou não de contraste iodado baseado na função renal e tipo de exame(s) radiológico(s)."
+config/features=PackedStringArray("4.4", "Mobile")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="uid://djpjwujemxxj8"
+
+[display]
+
+window/size/viewport_width=420
+window/size/viewport_height=780
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+
+renderer/rendering_method="mobile"
