@@ -1,21 +1,19 @@
 # [Calculadora Nefrológica](https://github.com/Nereare/calculadora-nefrologica) Changelog
 
-All notable changes to this project will be documented in this file.
+Todas as mudanças de nota deste projeto serão documentadas neste arquivo.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+O formato é baseado em [_Keep a Changelog_](https://keepachangelog.com/en/1.0.0/), e esse projeto adere ao [Versionamento Semântico](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Não publicado]
 
-### Added
-- Code of Conduct from [Contributor Covenant](https://www.contributor-covenant.org/).
-- [Do What The F*ck You Want To Public License](LICENSE.md).
-- Git metafiles (`.gitignore` and `.gitattributes`).
-- GitHub templates:
-  - Issues;
-  - Feature request;
-  - User question;
-  - Pull request.
-- ReadMe file.
-- Changelog file.
-- ...
+### Adicionado
+- Código de Conduta versão `2.1` de [Contributor Covenant](https://www.contributor-covenant.org/).
+- [Licença Pública _Do What The F*ck You Want To_](LICENSE.md).
+- Metarquivos Git (`.gitignore` e `.gitattributes`).
+- Modelos para GitHub:
+  - _Issues_;
+  - _Feature request_;
+  - _User question_;
+  - _Pull request_.
+- Arquivo ReadMe.
+- Arquivo Changelog.

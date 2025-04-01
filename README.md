@@ -6,37 +6,35 @@
 
 Uma calculadora para decisão sobre indicação ou não de contraste iodado baseado na função renal e tipo de exame(s) radiológico(s)
 
-## Installing
+## Instalação
 
-<!--
-TODO Set installation instructions
-BODY If there is some installation method, define it on the [README file](README.md).
--->
-1. Foo.
+1. Baixar [Godot](https://godotengine.org/);
+2. Clonar repositório: `git clone https://github.com/Nereare/calculadora-nefrologica.git`;
+3. Importar pasta do repositório no Godot; e
+4. Editar com a IDE do Godot.
 
-## Contributing
+## Contribuindo
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :tada:
+1. Faça um _fork_;
+2. Crie um _branch_ para sua contribuição: `git checkout -b minha-nova-contribuicao`;
+3. Submeta suas mudanças: `git commit -am 'Adicionar descrição das mudanças'`;
+4. Atualize a origem: `git push origin minha-nova-contribuicao`;
+5. Submeta um _pull request_. :tada:
 
-Please, also read our [Contributing Guidelines](CONTRIBUTING.md).
+Por favor, leia nossas [Diretrizes de Contribuição](CONTRIBUTING.md).
 
-### Code of Conduct
+### Código de Conduta
 
-Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md).
+Por favor, note que este projeto é lançado com um [Código de Conduta](CODE-OF-CONDUCT.md).
 
-By participating in this project you agree to abide by its terms.
+Ao participar neste projeto, você concorda em seguir e respeitar esse Código.
 
-## History & Versioning
+## História & Versionamento
 
-See the [Change Log](CHANGELOG.md) for further history.
+Veja o [Change Log](CHANGELOG.md) para histórico completo.
 
-This project uses [SemVer](http://semver.org/) for versioning. For the versions
-available, see the [tags on this repository](https://github.com/Nereare/calculadora-nefrologica/tags).
+Esse projeto usa [SemVer](http://semver.org/) para versionamento. Para acessar as versões disponíveis, veja as [_tags_ do repositório](https://github.com/Nereare/calculadora-nefrologica/tags).
 
-## License
+## Licença
 
-This project is available under the [Do What The F*ck You Want To Public License](http://www.wtfpl.net/).
+Esse projeto está disponível sob a [Licença Pública _Do What The F*ck You Want To_](http://www.wtfpl.net/).
