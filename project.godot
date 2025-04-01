@@ -12,11 +12,13 @@ config_version=5
 
 config/name="Calculadora Nefrológica"
 config/description="Uma calculadora para decisão sobre indicação ou não de contraste iodado baseado na função renal e tipo de exame(s) radiológico(s)."
+config/version="1.0.0"
+run/main_scene="uid://cm77gyepsuj2f"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="uid://djpjwujemxxj8"
+config/icon="uid://cdkvtb1dmqsy0"
 
 [display]
 
@@ -25,6 +27,11 @@ window/size/viewport_height=780
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
 
+[gui]
+
+theme/custom_font="uid://dk5ydxp5tu8hi"
+
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

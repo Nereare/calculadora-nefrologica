@@ -38,3 +38,7 @@ Esse projeto usa [SemVer](http://semver.org/) para versionamento. Para acessar a
 ## Licença
 
 Esse projeto está disponível sob a [Licença Pública _Do What The F*ck You Want To_](http://www.wtfpl.net/).
+
+### Créditos
+
+- [Material Symbols](https://fonts.google.com/icons) estão disponíveis sob a Licença [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)

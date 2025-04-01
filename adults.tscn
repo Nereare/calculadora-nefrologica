@@ -1,6 +1,295 @@
-[gd_scene format=3 uid="uid://cm77gyepsuj2f"]
+[gd_scene load_steps=16 format=3 uid="uid://cm77gyepsuj2f"]
+
+[ext_resource type="Script" uid="uid://dlbxtpocysdbf" path="res://adults.gd" id="1_d27nn"]
+[ext_resource type="Texture2D" uid="uid://b8vgctdhc0cxp" path="res://male.svg" id="2_dbm2i"]
+[ext_resource type="Script" uid="uid://yagbepxwuj1y" path="res://subscript.gd" id="3_dbm2i"]
+[ext_resource type="Texture2D" uid="uid://blnt3pub50txi" path="res://inpatient.svg" id="3_ob1lp"]
+[ext_resource type="Texture2D" uid="uid://dasfo7hx1eg01" path="res://female.svg" id="3_yftv0"]
+[ext_resource type="Texture2D" uid="uid://b4vbxeh6gqgf8" path="res://er.svg" id="4_d27nn"]
+[ext_resource type="Texture2D" uid="uid://c7g0dor6e7dla" path="res://outpatient.svg" id="5_armcq"]
+[ext_resource type="Texture2D" uid="uid://btklbykor48q0" path="res://abdomen.svg" id="8_8ex14"]
+[ext_resource type="Texture2D" uid="uid://bqkc5kf5w2mju" path="res://double.svg" id="9_i7kuf"]
+[ext_resource type="Texture2D" uid="uid://dehbqqa0x4w6r" path="res://blood.svg" id="10_2dxyw"]
+[ext_resource type="Texture2D" uid="uid://dyli5qxbqmmbg" path="res://triple.svg" id="11_hdonx"]
+[ext_resource type="Texture2D" uid="uid://oq5la0earm0f" path="res://quadruple.svg" id="12_7kb70"]
+[ext_resource type="Texture2D" uid="uid://bixga8pwxw3w0" path="res://other.svg" id="13_i7kuf"]
+[ext_resource type="Texture2D" uid="uid://c81p6djm4bu8d" path="res://clear.svg" id="14_2dxyw"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_igpdb"]
+script = ExtResource("3_dbm2i")
+metadata/_custom_type_script = "uid://yagbepxwuj1y"
 
 [node name="Adults" type="Window"]
 title = "Calculadora"
 initial_position = 2
 size = Vector2i(420, 780)
+script = ExtResource("1_d27nn")
+
+[node name="Container" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Container"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "Volume Contraste para Adultos"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="SexContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="SexLabel" type="Label" parent="Container/SexContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sexo"
+horizontal_alignment = 2
+
+[node name="Sex" type="OptionButton" parent="Container/SexContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+tooltip_text = "Sexo biológico do paciente"
+item_count = 2
+popup/item_0/text = "Menino"
+popup/item_0/icon = ExtResource("2_dbm2i")
+popup/item_0/id = 0
+popup/item_1/text = "Menina"
+popup/item_1/icon = ExtResource("3_yftv0")
+popup/item_1/id = 1
+
+[node name="WeightContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="WeightLabel" type="Label" parent="Container/WeightContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Peso"
+horizontal_alignment = 2
+
+[node name="Weight" type="LineEdit" parent="Container/WeightContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "# kg"
+emoji_menu_enabled = false
+virtual_keyboard_type = 3
+clear_button_enabled = true
+
+[node name="AgeContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="AgeLabel" type="Label" parent="Container/AgeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Idade"
+horizontal_alignment = 2
+
+[node name="Age" type="LineEdit" parent="Container/AgeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "# anos"
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+
+[node name="CreatContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="CreatLabel" type="Label" parent="Container/CreatContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Creatinina"
+horizontal_alignment = 2
+
+[node name="Creat" type="LineEdit" parent="Container/CreatContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "# mg/dL"
+emoji_menu_enabled = false
+virtual_keyboard_type = 3
+clear_button_enabled = true
+
+[node name="Separator1" type="HSeparator" parent="Container"]
+layout_mode = 2
+
+[node name="ContextContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="ContextLabel" type="Label" parent="Container/ContextContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Contexto do Exame"
+horizontal_alignment = 2
+
+[node name="Context" type="OptionButton" parent="Container/ContextContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+tooltip_text = "Sexo biológico do paciente"
+item_count = 3
+popup/item_0/text = "Internado"
+popup/item_0/icon = ExtResource("3_ob1lp")
+popup/item_0/id = 0
+popup/item_1/text = "PS"
+popup/item_1/icon = ExtResource("4_d27nn")
+popup/item_1/id = 1
+popup/item_2/text = "Ambulatório"
+popup/item_2/icon = ExtResource("5_armcq")
+popup/item_2/id = 2
+
+[node name="CreatTimeContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="CreatTimeLabel" type="RichTextLabel" parent="Container/CreatTimeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "Δt[sub]máx[/sub] Creat"
+autowrap_mode = 2
+horizontal_alignment = 2
+custom_effects = [SubResource("RichTextEffect_igpdb")]
+
+[node name="CreatTime" type="LineEdit" parent="Container/CreatTimeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "# dias"
+editable = false
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+
+[node name="TypeContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="TypeLabel" type="Label" parent="Container/TypeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tipo de Exame"
+horizontal_alignment = 2
+
+[node name="Type" type="OptionButton" parent="Container/TypeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+tooltip_text = "Sexo biológico do paciente"
+item_count = 6
+popup/item_0/text = "Abdome"
+popup/item_0/icon = ExtResource("8_8ex14")
+popup/item_0/id = 0
+popup/item_1/text = "Duplo"
+popup/item_1/icon = ExtResource("9_i7kuf")
+popup/item_1/id = 1
+popup/item_2/text = "Fase Art+Ven"
+popup/item_2/icon = ExtResource("10_2dxyw")
+popup/item_2/id = 2
+popup/item_3/text = "Triplo"
+popup/item_3/icon = ExtResource("11_hdonx")
+popup/item_3/id = 3
+popup/item_4/text = "Quádruplo"
+popup/item_4/icon = ExtResource("12_7kb70")
+popup/item_4/id = 4
+popup/item_5/text = "Outros"
+popup/item_5/icon = ExtResource("13_i7kuf")
+popup/item_5/id = 5
+
+[node name="Separator2" type="HSeparator" parent="Container"]
+layout_mode = 2
+
+[node name="CockroftContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="eGFRLabel" type="Label" parent="Container/CockroftContainer"]
+layout_mode = 2
+text = "TFG (Cockroft-Gault) = "
+
+[node name="Cockroft" type="LineEdit" parent="Container/CockroftContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "# mL/min"
+editable = false
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+
+[node name="CKDContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="eGFRLabel" type="Label" parent="Container/CKDContainer"]
+layout_mode = 2
+text = "TFG (CKD-EPI 2021) = "
+
+[node name="CKD" type="LineEdit" parent="Container/CKDContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "# mL/min"
+editable = false
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+
+[node name="Separator3" type="HSeparator" parent="Container"]
+layout_mode = 2
+
+[node name="Warning" type="Label" parent="Container"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="VolumeContainer" type="HBoxContainer" parent="Container"]
+layout_mode = 2
+
+[node name="VolumeLabel" type="RichTextLabel" parent="Container/VolumeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 35
+bbcode_enabled = true
+text = "V[sub]contr[/sub] = "
+autowrap_mode = 2
+horizontal_alignment = 2
+vertical_alignment = 1
+custom_effects = [SubResource("RichTextEffect_igpdb")]
+
+[node name="Volume" type="LineEdit" parent="Container/VolumeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 58
+placeholder_text = "# mL"
+editable = false
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+
+[node name="Separator4" type="HSeparator" parent="Container"]
+layout_mode = 2
+
+[node name="Clear" type="Button" parent="Container"]
+layout_mode = 2
+text = "Limpar"
+icon = ExtResource("14_2dxyw")
+
+[connection signal="egfr_update" from="." to="." method="_on_egfr_update"]
+[connection signal="message_update" from="." to="." method="_on_message_update"]
+[connection signal="volume_update" from="." to="." method="_on_volume_update"]
+[connection signal="item_selected" from="Container/SexContainer/Sex" to="." method="_on_sex_item_selected"]
+[connection signal="text_changed" from="Container/WeightContainer/Weight" to="." method="_on_weight_text_changed"]
+[connection signal="text_changed" from="Container/AgeContainer/Age" to="." method="_on_age_text_changed"]
+[connection signal="text_changed" from="Container/CreatContainer/Creat" to="." method="_on_creat_text_changed"]
+[connection signal="item_selected" from="Container/ContextContainer/Context" to="." method="_on_context_item_selected"]
+[connection signal="item_selected" from="Container/TypeContainer/Type" to="." method="_on_type_item_selected"]
+[connection signal="text_changed" from="Container/CockroftContainer/Cockroft" to="." method="_on_cockroft_text_changed"]
+[connection signal="text_changed" from="Container/CKDContainer/CKD" to="." method="_on_ckd_text_changed"]
+[connection signal="pressed" from="Container/Clear" to="." method="_on_clear_pressed"]
